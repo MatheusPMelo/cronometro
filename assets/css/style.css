@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(102, 71, 131);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Grechen Fuemen", sans-serif;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  font-size: 1.3em;
+  line-height: 1.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 10px;
+}
+
+#btns button {
+  cursor: pointer;
+
+  margin-left: 0.4rem;
+
+  padding: 0.3rem 1rem;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgba(66, 41, 87, 0.664);
+
+  width: 200px;
+  height: 100px;
+
+  position: relative;
+  transform: rotate(-30deg) skew(25deg) scale(0.5);
+
+  font-size: 20pt;
+
+  transition: 0.5s;
+
+  box-shadow: -40px 30px 20px black;
+}
+
+#btns button:hover {
+  position: relative;
+  transition: 0.5s;
+  transform: rotate(-0deg);
+  box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+  background-color: rgba(72, 100, 177, 0.603);
+  color: white;
+}
+
+.relogio {
+  font-size: 50pt;
+
+  display: flex;
+  justify-content: center;
+}
+
+.stop {
+  animation: stopClock 0.8s ease-in-out infinite;
+}
+
+@keyframes stopClock {
+  0% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.imgs img {
+  position: absolute;
+
+  z-index: -1;
+
+  object-fit: cover;
+
+  transition: opacity 800ms;
+
+  opacity: 0;
+
+  border-radius: 20px;
+
+  box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+
+  max-width: 900px;
+  min-width: 300px;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  opacity: 1 !important;
+}
+
+.hoursNow {
+  text-shadow: 0px 0px 5px black;
+}
