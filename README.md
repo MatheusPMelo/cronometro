@@ -1,5 +1,5 @@
 # cronometro
 
-  - https://matheuspmelo.github.io/cronometro/
+  - link
 
 Projeto simples de um cronometro com funções básicas.
